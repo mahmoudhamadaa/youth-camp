@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خطة كامب الشباب</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: 'Arial', sans-serif;
+            direction: rtl;
+        }
+        .day-header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-bottom: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .day-header.strikethrough {
+            text-decoration: line-through;
+            cursor: not-allowed;
+            background-color: #b0b0b0;
+        }
+        .activity-table {
+            margin-bottom: 40px;
+            display: none;
+        }
+        .day-header:hover {
+            background-color: #0056b3;
+        }
+        .like-button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .like-button:hover {
+            background-color: #0056b3;
+        }
+        .comments-section {
+            margin-top: 20px;
+        }
+        .comment-box {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .comment {
+            background-color: #f8f9fa;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 20px;
+            max-width: 75%;
+            position: relative;
+            padding-left: 40px;
+        }
+        .comment .username {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .comment .message {
+            margin-bottom: 5px;
+        }
+        .comment .reply-button {
+            font-size: 0.9em;
+            color: #007bff;
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .reply-box {
+            margin-left: 20px;
+        }
+        .icon {
+            margin-right: 5px;
+        }
+        .reply-comment {
+            background-color: #e2e3e5;
+            padding: 8px;
+            margin-top: 10px;
+            border-radius: 20px;
+        }
+        body {
+    background: linear-gradient(45deg, #1E90FF, #FF6347);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .social-icons {
+    margin-bottom: 10px;
+}
+
+footer .social-icons a {
+    color: white;
+    margin: 0 15px;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #FF6347; /* تغيير اللون عند التمرير فوق الأيقونة */
+}
+
+footer p {
+    font-size: 14px;
+    margin: 0;
+}
+header {
+    background-color: #1E90FF; /* يمكنك تغيير اللون */
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #FF6347; /* تغيير اللون عند التمرير فوق الرابط */
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="https://mahmoudhamadaa.github.io/m-h/">About me</a></li>
+                <li><a href="https://wa.me/201149803158">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container mt-5">
+
+        
+        <h1 class="text-center mb-4"> تدريب فريق القيادات الشبابيه لمشروع مناهضة الاثار السلبيه للممارسات التقليديه الضاره والمتعلقة بختان الاناث وزواج الاطفال بصعيد مصر وذلك في الفترة من 21 الي 24 اكتوبر 2024 </h1>
+
+        <!-- الأيام -->
+        <div class="day-header strikethrough" onclick="toggleDay('day1', this)" data-date="2024-10-21">اليوم الأول: الاثنين <span>21/10/2024</span></div>
+        <center><table id="day1" class="table table-bordered activity-table" >
+            <thead class="thead-dark">
+                <tr>
+                    <th><i class="far fa-clock icon"></i>الوقت</th>
+                    <th><i class="fas fa-tasks icon"></i>النشاط</th>
+                    <th><i class="fas fa-users icon"></i>المجموعة</th>
+                    <th>إعجاب</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>9:00 - 10:00 صباحًا</td>
+                    <td>محاضرة افتتاحية</td>
+                    <td>مجموعة 1</td>
+                    <td><button class="like-button" onclick="likeActivity(this)">إعجاب <i class="fas fa-thumbs-up"></i> <span class="likes">0</span></button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="day-header" onclick="toggleDay('day2', this)" data-date="2024-10-22">اليوم الثاني: الثلاثاء <span>22/10/2024</span></div>
+        <table id="day2" class="table table-bordered activity-table">
+            <thead class="thead-dark">
+                <tr>
+                    <th><i class="far fa-clock icon"></i>الوقت</th>
+                    <th><i class="fas fa-tasks icon"></i>النشاط</th>
+                    <th><i class="fas fa-users icon"></i>المجموعة</th>
+                    <th>إعجاب</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>9:00 - 10:00 ص</td>
+                    <td>جلسة رياضية</td>
+                    <td>المجموعتين</td>
+                    <td><button class="like-button" onclick="likeActivity(this)">إعجاب <i class="fas fa-thumbs-up"></i> <span class="likes">0</span></button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="day-header" onclick="toggleDay('day3', this)" data-date="2024-10-23">اليوم الثالث: الأربعاء <span>23/10/2024</span></div>
+        <table id="day3" class="table table-bordered activity-table">
+            <thead class="thead-dark">
+                <tr>
+                    <th><i class="far fa-clock icon"></i>الوقت</th>
+                    <th><i class="fas fa-tasks icon"></i>النشاط</th>
+                    <th><i class="fas fa-users icon"></i>المجموعة</th>
+                    <th>إعجاب</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>9:00 - 9:30 ص</td>
+                    <td>نشاط رياضي خارج القاعة</td>
+                    <td> المجموعتين</td>
+                    <td><button class="like-button" onclick="likeActivity(this)">إعجاب <i class="fas fa-thumbs-up"></i> <span class="likes">0</span></button></td>
+                </tr>
+                <tr>
+                    <td>9:30 - 11:00 ص</td>
+                    <td>الجلسة الأولى - المشاركة المجتمعية
+             وشباب قادر علي تحفير اقرانهم لاخذ
+
+                        قرارات واعية
+                        <br>
+                        نشاط (1): دراسة حالة للمناقشة والتحليل
+                        داخل مجموعات عمل.
+                        <br>
+                        نشاط (2): لعب ادوار</td>
+                    <td> مجموعة 2</td>
+                    <td><button class="like-button" onclick="likeActivity(this)">إعجاب <i class="fas fa-thumbs-up"></i> <span class="likes">0</span></button></td>
+                </tr>
+                <tr>
+                    <td>9:30 - 11:00 ص</td>
+                    <td>الجلسة الأولي المشاركة المجتمعية وشباب قادر علي تحفير اقرانهم لاخذ قرارات واعية استخدام الية الحكي والتاثير في المجتمع في تناول موضوعات الختان) زواج الاطفال
+<br>
+                        نشاط (1) لعبة الشطرنج والمقاومة عن الممارسات الضارة ضد الفتاه
+<br>
+                       : نشاط (2)
+
+                        تمرين عملي الكرسي الفارغ) ( وصف المجتمع يشمل شكل المجتمع بصفاته - عاداته وتقاليد غيرها أنسنة المجتمع دور الشاب في فتح حوار ويكون له تأثير فعال وايجابي بالمجتمع وكيف يصبح اداة للتغيير في المجتمع وقائد المسيرة مناهضة الآثار السلبية للممارسات
+                        التقليدية الضارة والمتعلقة بختان الاناث - زواج</td>
+                    <td> مجموعة 1</td>
+                    <td><button class="like-button" onclick="likeActivity(this)">إعجاب <i class="fas fa-thumbs-up"></i> <span class="likes">0</span></button></td>
+                </tr>
+                <tr>
+                    <td>11:00 - 11:30 ص</td>
+                    <td>فقرة ترفيهيه</td>
+                    <td> المجموعتين</td>
+                    <td><button class="like-button" onclick="likeActivity(this)">إعجاب <i class="fas fa-thumbs-up"></i> <span class="likes">0</span></button></td>
+                </tr>
+                <tr>
+                    <td>11:30 - 1:30 </td>
+                    <td>الجلسة الثانية - تعريف مفهوم الصحة
+
+                        الانجابية واماكن تقديم خدمات الصحة الانجابية انواع الاساءات واشكالها التي تتعرض لها الفتاة
+                        <br>
+                        - مفهوم العنف الجنسي والممارسات التقليدية المؤذية واليات العمل معه
+                        <br>
+                        اليات الابلاغ المختلفة وضع الية ابلاغ داخلية
+
+                        النوادي الحماية 
+                        <br>نشاط (1) مجموعات ناقدة - دعائم ومقومات التاثير في الآخرين وكيف اكون مؤثر مجتمعي</td>
+                    <td> مجموعة 1</td>
+                    <td><button class="like-button" onclick="likeActivity(this)">إعجاب <i class="fas fa-thumbs-up"></i> <span class="likes">0</span></button></td>
+                </tr>
+                <tr>
+                    <td>11:30 - 1:30</td>
+                    <td>الجلسة الثانية - مفهوم المسرح التفاعلي كاداة
+
+                        للتغيير بالتركيز علي قضيتي (الختان - الزواج
+
+                        المبكر)</td>
+                    <td> مجموعة 2</td>
+                    <td><button class="like-button" onclick="likeActivity(this)">إعجاب <i class="fas fa-thumbs-up"></i> <span class="likes">0</span></button></td>
+                </tr>
+                <tr>
+                    <td>1:30 - 4:30 م</td>
+                    <td>راحة وغداء</td>
+                    <td> المجموعتين</td>
+                    <td><button class="like-button" onclick="likeActivity(this)">إعجاب <i class="fas fa-thumbs-up"></i> <span class="likes">0</span></button></td>
+                </tr>
+                <tr>
+                    <td>4:30 - 5:00 م</td>
+                    <td>نشاط خارج القاعة</td>
+                    <td> المجموعتين</td>
+                    <td><button class="like-button" onclick="likeActivity(this)">إعجاب <i class="fas fa-thumbs-up"></i> <span class="likes">0</span></button></td>
+                </tr>
+                <tr>
+                    <td>5:00 - 6:30 م</td>
+                    <td>الجلسة الثانية - مفهوم المسرح التفاعلي كاداة
+
+                        للتغيير بالتركيز علي قضيتي (الختان - الزواج
+
+                        المبكر)</td>
+                    <td> مجموعة 1</td>
+                    <td><button class="like-button" onclick="likeActivity(this)">إعجاب <i class="fas fa-thumbs-up"></i> <span class="likes">0</span></button></td>
+                </tr>
+                <tr>
+                    <td>5:00 - 6:30 م</td>
+                    <td>لجلسة الثانية - تعريف مفهوم الصحة
+
+                        الانجابية واماكن تقديم خدمات الصحة الانجابية انواع الاساءات واشكالها التي تتعرض لها الفتاة
+                        <br>
+                        - مفهوم العنف الجنسي والممارسات التقليدية المؤذية واليات العمل معه
+                        <br>
+                        اليات الابلاغ المختلفة وضع الية ابلاغ داخلية
+
+                        النوادي الحماية 
+                        <br>نشاط (1) مجموعات ناقدة - دعائم ومقومات التاثير في الآخرين وكيف اكون مؤثر مجتمعي</td>
+                    <td> مجموعة 2</td>
+                    <td><button class="like-button" onclick="likeActivity(this)">إعجاب <i class="fas fa-thumbs-up"></i> <span class="likes">0</span></button></td>
+                </tr>
+                <tr>
+                    <td>6:30 - 6:45 م</td>
+                    <td>نشاط ترفيهي هادف</td>
+                    <td> المجموعتين</td>
+                    <td><button class="like-button" onclick="likeActivity(this)">إعجاب <i class="fas fa-thumbs-up"></i> <span class="likes">0</span></button></td>
+                </tr>
+                <tr>
+                    <td>6:45 - 8:00 م</td>
+                    <td>الجلسه الرابعة : جلسة مجمعة <br> مجموعة 1 و مجموعة 2 <br>
+                        (كيفية عمل حملة انتخابية) تشمل اهداف الحملة الانتخابية - تصنيف الناخبين وقنوات التواصل - الرسائل والادوات وكيفية وصولها - كيفية قياس التاثير - المتابعة – توضيح الادور للفريق المنتخب تشمل (الرئيس - نائب سكرتير - اعضاء) لنوادي الحماية
+                    <hr>
+                    نشاط (1) مجموعات عمل لوضع رسائل ايجابية تناهض الممارسات الضارة المنتشرة في المجتمع ضد الفتاة سواء (حكي- رسائل ايجابية مكتوبة او منطوقة - صورة – مسرح - اسكتش ....غيرها)
+                    تجهيز خطة عمل سيقوم باعدادها كل فريق نادي حماية بكل قرية
+                <hr>
+            تقيييييم وتوصيااات</td>
+                    <td> المجموعتين</td>
+                    <td><button class="like-button" onclick="likeActivity(this)">إعجاب <i class="fas fa-thumbs-up"></i> <span class="likes">0</span></button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="day-header" onclick="toggleDay('day4', this)" data-date="2024-10-24">اليوم الرابع: الخميس <span>24/10/2024</span></div>
+        <table id="day4" class="table table-bordered activity-table">
+            <thead class="thead-dark">
+                <tr>
+                    <th><i class="far fa-clock icon"></i>الوقت</th>
+                    <th><i class="fas fa-tasks icon"></i>النشاط</th>
+                    <th><i class="fas fa-users icon"></i>المجموعة</th>
+                    <th>إعجاب</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr >
+                    <td>9:00 - 12:00 صباحًا</td>
+                    <td>الجلسة الأولى - جلسة مجمعة للمجموعتين
+<br>
+                        لعمل الاتي:
+                        <br>
+                        -1- تقديم العروض والرسائل الايجابية
+                        
+                        المناهضة للممارسات السلبية المنتشرة في المجتمع ضد الفتاه
+                        <br>
+                        2 - خطة عمل سيقوم باعدادها كل
+                        
+                        فريق نادي حماية بكل قرية
+                        <br>
+                        3- عمل الاختبار البعدي
+                        <br>
+                        4- تقييم عام واقتراحات وتوصيات</td>
+                    <td>المجموعتين</td>
+                    <td><button class="like-button" onclick="likeActivity(this)">إعجاب <i class="fas fa-thumbs-up"></i> <span class="likes">0</span></button></td>
+                </tr>
+            </tbody>
+        </table></center>
+
+        <!-- قسم التعليقات -->
+        <div class="comments-section">
+            <h3 style="text-align: right;">الاقتراحات / التوصيات / تعليق ايجابي</h3>
+            <input id="username" class="form-control mb-2" placeholder="أدخل اسمك" >
+            <textarea id="comment-box" class="comment-box" rows="3" placeholder="أضف تعليقك هنا..."></textarea>
+          <center>  <button class="btn btn-primary" onclick="addComment()" >إرسال</button></center>
+
+            <div id="comments-list"></div>
+        </div>
+
+        
+        
+    </div>
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/mahmoudhamada65?mibextid=kFxxJD" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://github.com/mahmoudhamadaa" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://wa.me/201149803158" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <p>&copy; 2024 Mahmoud mohamed. All Rights Reserved.</p>
+    </footer>
+    <script>
+        const today = new Date();
+
+        // Toggle display for each day's activities and check if the day is past
+        function toggleDay(dayId, headerElement) {
+            const dayDate = new Date(headerElement.dataset.date);
+            if (dayDate < today) {
+                return; // Prevent opening past days
+            }
+
+            const table = document.getElementById(dayId);
+            if (table.style.display === "none" || table.style.display === "") {
+                table.style.display = "table";
+            } else {
+                table.style.display = "none";
+            }
+        }
+
+        // Function to handle likes and prevent multiple likes from the same user
+        function likeActivity(button) {
+            if (button.classList.contains('liked')) {
+                alert("لقد قمت بالفعل بالإعجاب بهذا النشاط!");
+                return;
+            }
+            const likesSpan = button.querySelector('.likes');
+            let currentLikes = parseInt(likesSpan.textContent);
+            likesSpan.textContent = currentLikes + 1;
+            button.classList.add('liked');
+        }
+
+        // Function to add a new comment
+        function addComment() {
+            const username = document.getElementById("username").value;
+            const commentBox = document.getElementById("comment-box");
+            const commentText = commentBox.value;
+
+            if (username.trim() === "" || commentText.trim() === "") {
+                alert("يرجى إدخال اسمك والتعليق!");
+                return;
+            }
+
+            // Create comment bubble
+            const commentDiv = document.createElement("div");
+            commentDiv.classList.add("comment");
+
+            // Create username element
+            const usernameElement = document.createElement("div");
+            usernameElement.classList.add("username");
+            usernameElement.textContent = username;
+
+            // Create message element
+            const messageElement = document.createElement("div");
+            messageElement.classList.add("message");
+            messageElement.textContent = commentText;
+
+            // Create reply button
+            const replyButton = document.createElement("span");
+            replyButton.classList.add("reply-button");
+            replyButton.textContent = "رد";
+            replyButton.onclick = () => showReplyBox(commentDiv);
+
+            // Append username, message, and reply button to the comment
+            commentDiv.appendChild(usernameElement);
+            commentDiv.appendChild(messageElement);
+            commentDiv.appendChild(replyButton);
+
+            // Append comment to the comment list
+            document.getElementById("comments-list").appendChild(commentDiv);
+
+            // Clear comment box
+            commentBox.value = "";
+        }
+
+        // Function to show reply box
+        function showReplyBox(commentElement) {
+            // Create reply box if it doesn't exist
+            if (!commentElement.querySelector(".reply-box")) {
+                const replyBox = document.createElement("textarea");
+                replyBox.classList.add("comment-box", "reply-box");
+                replyBox.placeholder = "أضف ردك هنا...";
+
+                const sendReplyButton = document.createElement("button");
+                sendReplyButton.classList.add("btn", "btn-secondary", "mt-2");
+                sendReplyButton.textContent = "إرسال الرد";
+                sendReplyButton.onclick = () => addReply(replyBox, commentElement);
+
+                // Append reply box and send button to the comment
+                commentElement.appendChild(replyBox);
+                commentElement.appendChild(sendReplyButton);
+            }
+        }
+
+        // Function to add a reply to a comment
+        function addReply(replyBox, commentElement) {
+            const replyText = replyBox.value;
+
+            if (replyText.trim() === "") {
+                alert("يرجى إدخال الرد!");
+                return;
+            }
+
+            // Create reply comment bubble
+            const replyDiv = document.createElement("div");
+            replyDiv.classList.add("reply-comment");
+            replyDiv.textContent = replyText;
+
+            // Append reply to the comment
+            commentElement.appendChild(replyDiv);
+
+            // Clear reply box
+            replyBox.value = "";
+        }
+
+        // Automatically mark past days as strikethrough
+        document.querySelectorAll('.day-header').forEach(header => {
+            const dayDate = new Date(header.dataset.date);
+            if (dayDate < today) {
+                header.classList.add('strikethrough');
+            }
+        });
+    </script>
+</body>
+</html>
